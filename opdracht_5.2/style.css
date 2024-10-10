@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Goldman", sans-serif;
+  background: black;
+  background-image: url('./img/background.jpeg');
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+}
+h1, h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8rem;
+  margin: 45vh 0 10vh;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 4vh;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15vh 0;
+  gap: 2rem;
+}
+
+.description {
+  color: white;
+  font-size: 2.4rem;
+  width: 40%;
+  margin: 0;
+}
+
+.section-content img {
+  width: 30%;
+  max-width: 200px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00a8c7;
+  text-align: center;
+  font-size: 34px;  
+}
+
+.DropDown:hover .DropDownContent {
+  display: block;
+}
+
+.DropDown:hover {
+  margin-bottom: 0px;
+  background-color: #E9E9E9;
+}
+
+.DropDown:hover a {
+  color: #00a8c7;
+}
+
+.DropDownMenuItem:hover {
+  background-color: rgb(63, 61, 61);
+}
+
+.DropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #E9E9E9;
+  min-width: 20vw;
+  z-index: 1;
+  box-shadow: 0rem 0.5rem 1rem 0rem;
+}
+
+.DropDownContent a {
+  color: black;
+  padding: 0.8rem 1rem;
+  display: block;
+  text-align: left;
+}
